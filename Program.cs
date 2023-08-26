@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace NewtonsoftLibraryJson
 {
@@ -7,18 +9,26 @@ namespace NewtonsoftLibraryJson
     {
         static void Main(string[] args)
         {
-            var person = new Person
-            {
-                Age = 19,
-                FirstName = "Newtonsoft",
-                LastName = "Men"
-            };
+            var person = File.Exists("person.json")
+                ? JsonConvert.DeserializeObject<Person>(File.ReadAllText("person.json")) : new Person
+                {
+                    Age = 19,
+                    FirstName = "Newtonsoft",
+                    LastName = "Men",
+                    Cars = new List<Cars>
+                    {
+                        new Cars
+                        {
+                            Auto1 = "BMV",
+                            Auto2 = "AUDI"
+                        }
+                    }
+                };
 
-            var jsonDatata = JsonConvert.SerializeObject(person);
+            File.WriteAllText("person.json", JsonConvert.SerializeObject(person));
+            var obj = JsonConvert.DeserializeObject<Person>(File.ReadAllText("person.json"));
 
-            var person2 = JsonConvert.DeserializeObject<Person>(jsonDatata);
-
-            //Console.WriteLine(person2);
+            //Console.WriteLine(obj);
             Console.ReadKey();
         }
     }
