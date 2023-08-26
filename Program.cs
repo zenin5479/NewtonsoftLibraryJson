@@ -42,10 +42,11 @@ namespace NewtonsoftLibraryJson
             {
                 Console.WriteLine("Id : " + item.Id + "\tTitle : " + item.Title);
             }
+
             Console.ReadKey();
         }
     }
-
+    
     class Movie
     {
         public int Id { get; set; }
