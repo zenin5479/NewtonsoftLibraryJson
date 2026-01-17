@@ -8,7 +8,7 @@ namespace NewtonsoftLibraryJson
    {
       static void Main(string[] args)
       {
-         Console.WriteLine("Сериализация");
+         Console.WriteLine("Сериализация объекта");
          // 1. Сериализация
          Movie movie = new Movie { Id = 1, Title = "Миссия невыполнима" };
          // movie - это объект, преобразуем его в строку с помощью JsonConvert.SerializeObject           
