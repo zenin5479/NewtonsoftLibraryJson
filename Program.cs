@@ -20,8 +20,8 @@ namespace NewtonsoftLibraryJson
          // 2. Десериализация
          Movie newMovie = JsonConvert.DeserializeObject<Movie>(result);
          // Теперь строка преобразуется в объект           
-         Console.WriteLine("Id : " + newMovie.Id);
-         Console.WriteLine("Title : " + newMovie.Title);
+         Console.WriteLine("Id: " + newMovie.Id);
+         Console.WriteLine("Title: " + newMovie.Title);
 
          Console.WriteLine("\nСериализация коллекции");
          // 3. Сериализация коллекции
