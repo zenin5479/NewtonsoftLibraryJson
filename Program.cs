@@ -47,10 +47,7 @@ namespace NewtonsoftLibraryJson
             Console.WriteLine("Id : " + item.Id + "\tTitle : " + item.Title);
             i++;
          }
-         for ()
-         {
-            
-         }
+         
 
          Console.ReadKey();
       }
