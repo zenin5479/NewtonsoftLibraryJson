@@ -40,11 +40,11 @@ namespace NewtonsoftLibraryJson
          // 4. Десериализация коллекции
          List<Movie> newMovies = JsonConvert.DeserializeObject<List<Movie>>(collectionResult);
 
-         while ()
+         while (i < newMovies.Count)
          {
             
          }
-         for (int i = 0; i < newMovies.Count; i++)
+         for (int i = 0; ; i++)
          {
             Movie item = newMovies[i];
             Console.WriteLine("Id : " + item.Id + "\tTitle : " + item.Title);
