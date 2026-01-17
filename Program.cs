@@ -13,7 +13,7 @@ namespace NewtonsoftLibraryJson
          Movie movie = new Movie { Id = 1, Title = "Миссия невыполнима" };
          // movie - это объект, преобразуем его в строку с помощью JsonConvert.SerializeObject           
          string result = JsonConvert.SerializeObject(movie);
-         // Преобразуется в строку в виде {"Id":1,"Title":"Mission Impossible"}
+         // Преобразуется в строку в виде {"Id": 1,"Title": "Mission Impossible"}
          Console.WriteLine(result);
 
          Console.WriteLine("\nДесериализация объекта");
@@ -43,7 +43,7 @@ namespace NewtonsoftLibraryJson
          while (i < newMovies.Count)
          {
             Movie item = newMovies[i];
-            Console.WriteLine("Id: " + item.Id +"; "+ "Title: " + item.Title);
+            Console.WriteLine("Id: " + item.Id + "; " + "Title: " + item.Title);
             i++;
          }
 
