@@ -41,7 +41,7 @@ namespace NewtonsoftLibraryJson
          List<Movie> newMovies = JsonConvert.DeserializeObject<List<Movie>>(collectionResult);
          for (int i = 0; i < newMovies.Count; i++)
          {
-            var item = newMovies[i];
+            Movie item = newMovies[i];
             Console.WriteLine("Id : " + item.Id + "\tTitle : " + item.Title);
          }
 
