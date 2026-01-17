@@ -6,7 +6,7 @@ namespace NewtonsoftLibraryJson
 {
    internal class Program
    {
-      static void Main(string[] args)
+      static void Main()
       {
          Console.WriteLine("Сериализация объекта");
          // 1. Сериализация
