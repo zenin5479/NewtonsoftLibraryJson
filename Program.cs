@@ -42,9 +42,9 @@ namespace NewtonsoftLibraryJson
          int i = 0;
          while (i < newMovies.Count)
          {
-
+            i++;
          }
-         for (; i++)
+         for ()
          {
             Movie item = newMovies[i];
             Console.WriteLine("Id : " + item.Id + "\tTitle : " + item.Title);
