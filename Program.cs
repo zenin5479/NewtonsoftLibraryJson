@@ -43,13 +43,13 @@ namespace NewtonsoftLibraryJson
          while (i < newMovies.Count)
          {
             
-            
+            Movie item = newMovies[i];
+            Console.WriteLine("Id : " + item.Id + "\tTitle : " + item.Title);
             i++;
          }
          for ()
          {
-            Movie item = newMovies[i];
-            Console.WriteLine("Id : " + item.Id + "\tTitle : " + item.Title);
+            
          }
 
          Console.ReadKey();
