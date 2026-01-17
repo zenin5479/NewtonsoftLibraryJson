@@ -16,7 +16,7 @@ namespace NewtonsoftLibraryJson
          // Преобразуется в строку в виде {"Id":1,"Title":"Mission Impossible"}
          Console.WriteLine(result);
 
-         Console.WriteLine("\nДесериализация");
+         Console.WriteLine("\nДесериализация объекта");
          // 2. Десериализация
          Movie newMovie = JsonConvert.DeserializeObject<Movie>(result);
          // Теперь строка преобразуется в объект           
