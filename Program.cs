@@ -39,6 +39,11 @@ namespace NewtonsoftLibraryJson
          Console.WriteLine("\nДесериализация коллекции");
          // 4. Десериализация коллекции
          List<Movie> newMovies = JsonConvert.DeserializeObject<List<Movie>>(collectionResult);
+
+         while ()
+         {
+            
+         }
          for (int i = 0; i < newMovies.Count; i++)
          {
             Movie item = newMovies[i];
