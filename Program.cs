@@ -13,7 +13,7 @@ namespace NewtonsoftLibraryJson
          Movie movie = new Movie { Id = 1, Title = "Миссия невыполнима" };
          // movie - объект, преобразуем его в строку с помощью JsonConvert.SerializeObject           
          string result = JsonConvert.SerializeObject(movie);
-         // Преобразуется в строку в виде {"Id": 1,"Title": "Mission Impossible"}
+         // Преобразуется в строку в виде {"Id": 1,"Title": "Миссия невыполнима"}
          Console.WriteLine(result);
 
          Console.WriteLine("\nДесериализация объекта");
